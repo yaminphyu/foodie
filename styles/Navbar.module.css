@@ -47,15 +47,15 @@
 }
 
 .mobile-sidebar-container {
-    @apply z-20 w-[65vw] md:w-[40vw] h-screen absolute top-0 right-0 overflow-y-auto flex flex-col gap-10 bg-yellow-400;
+    @apply z-20 w-[65vw] md:w-[40vw] h-screen absolute top-0 right-0 overflow-y-auto flex flex-col bg-yellow-400;
 }
 
 .close-btn {
-    @apply h-20 w-full flex justify-end items-center px-10;
+    @apply h-20 w-full flex justify-end items-center pl-10 pr-6;
 }
 
 .mobile-menu {
-    @apply w-full flex justify-start items-center px-10;
+    @apply w-full flex justify-start items-center pl-10 pr-6;
 }
 
 .mobile-menu-list {
@@ -63,7 +63,7 @@
 }
 
 .mobile-toggle-action {
-    @apply text-3xl text-gray-600 hover:text-gray-700 cursor-pointer;
+    @apply text-xl md:text-3xl text-gray-600 hover:text-gray-700 cursor-pointer;
 }
 
 .mobile-item {
