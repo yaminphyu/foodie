@@ -51,7 +51,7 @@
 }
 
 .close-btn {
-    @apply h-20 w-full flex justify-end items-center pl-10 pr-6;
+    @apply h-16 w-full flex justify-end items-center pl-10 pr-6;
 }
 
 .mobile-menu {
