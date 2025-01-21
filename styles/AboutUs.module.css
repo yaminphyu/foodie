@@ -1,0 +1,59 @@
+.container {
+    @apply flex justify-center items-center w-full h-full px-5 md:px-10 xl:px-5 md:py-16 lg:py-10 box-border bg-white;
+}
+
+.wrapper {
+    @apply flex flex-col justify-center items-center w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[75vw] 5xl:w-[70vw] h-full gap-7 md:gap-10 px-6 py-12 lg:p-0;
+}
+
+.title {
+    @apply uppercase text-sm;
+}
+
+.main-title {
+    @apply text-3xl font-dancing uppercase;
+}
+
+.booking-container {
+    @apply flex flex-col lg:flex-row justify-between items-start w-full lg:h-[75vh] gap-12 md:gap-20;
+}
+
+.booking-img-container {
+    @apply flex flex-col justify-start xl:justify-between items-start w-full lg:w-[55vw] h-full gap-5;
+}
+
+.booking-phone-container {
+    @apply border-2 md:border-4 border-gray-500 h-20 md:h-28 w-full gap-2 md:gap-4 flex flex-col justify-center items-center;
+}
+
+.booking {
+    @apply text-lg md:text-xl font-semibold;
+}
+
+.phone {
+    @apply text-xl md:text-2xl font-semibold text-yellow-500;
+}
+
+.text-container {
+    @apply flex flex-col justify-start items-start w-full lg:w-[37vw] h-full gap-3 box-border;
+}
+
+.first-string {
+    @apply text-base text-gray-500 italic tracking-wider;
+}
+
+.string-container {
+    @apply flex flex-row justify-start items-center gap-1;
+}
+
+.check {
+    @apply text-yellow-500;
+}
+
+.string {
+    @apply tracking-wider text-base font-medium;
+}
+
+.signature-container {
+    @apply w-full h-full flex flex-row justify-center lg:justify-start items-center gap-5 mt-10 lg:mt-0;
+}
