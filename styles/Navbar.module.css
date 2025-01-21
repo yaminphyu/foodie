@@ -1,5 +1,5 @@
 .container {
-    @apply flex justify-center items-center w-full h-16 md:h-20 xl:h-24 px-5 md:px-10 xl:px-5 box-border fixed top-0 left-0 z-10;
+    @apply flex justify-center items-center w-full h-16 md:h-20 xl:h-24 px-5 md:px-10 xl:px-5 box-border fixed top-0 left-0 z-10 bg-white;
 }
 
 .wrapper {
@@ -67,5 +67,5 @@
 }
 
 .mobile-item {
-    @apply text-base font-semibold text-gray-600 hover:text-gray-700 tracking-wider;
+    @apply text-sm md:text-base font-semibold text-gray-600 hover:text-gray-700 tracking-wider;
 }
