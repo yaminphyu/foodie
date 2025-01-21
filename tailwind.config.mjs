@@ -25,6 +25,15 @@ export default {
         "4xl": "1550px",
         "5xl": "1650px",
       },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-3%)', animationTimingFunction: 'ease-in-out' },
+          '50%': { transform: 'translateY(3%)', animationTimingFunction: 'ease-in-out' },
+        },
+      },
+      animation: {
+        bounce: 'bounce 5s infinite',
+      },
     },
   },
   plugins: [],

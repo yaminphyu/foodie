@@ -47,7 +47,7 @@
 }
 
 .mobile-sidebar-container {
-    @apply z-20 w-[65vw] md:w-[40vw] h-screen absolute top-0 right-0 overflow-y-auto flex flex-col bg-yellow-400;
+    @apply z-20 w-[65vw] md:w-[40vw] h-screen fixed lg:absolute top-0 right-0 overflow-y-auto flex flex-col bg-yellow-400;
 }
 
 .close-btn {

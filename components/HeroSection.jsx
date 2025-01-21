@@ -12,7 +12,13 @@ export default function HeroSection() {
           <button className={styles['booking-button']}>Book a Table</button>
         </div>
         <div className={styles['image-container']}>
-          <Image src='/images/hero-img.png' alt='hero image' width={500} height={500} />
+          <Image
+            src='/images/hero-img.png'
+            alt='hero image'
+            width={500}
+            height={500}
+            className='animate-bounce'
+          />
         </div>
       </div>
     </div>

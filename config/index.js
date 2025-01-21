@@ -21,8 +21,8 @@ export const menu = [
     },
     {
         id: 5,
-        title: "Chiefs",
-        url: "/chiefs",
+        title: "Chefs",
+        url: "/chefs",
     },
     {
         id: 6,
