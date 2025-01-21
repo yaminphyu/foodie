@@ -1,0 +1,7 @@
+.container {
+    @apply z-30 h-12 w-12 fixed right-5 lg:right-3 bottom-5 lg:bottom-3 border-2 border-yellow-500 flex justify-center items-center rounded-full bg-yellow-500 cursor-pointer;
+}
+
+.arrow {
+    @apply text-2xl text-white;
+}
