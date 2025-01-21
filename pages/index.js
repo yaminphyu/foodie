@@ -1,16 +1,26 @@
+import HeroSection from "@/components/HeroSection";
 import MobileSideBar from "@/components/MobileSideBar";
 import Navbar from "@/components/Navbar";
 import { MobileToggleContext } from "@/context/MobileToggleContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 export default function Home() {
   const { toggle } = useContext(MobileToggleContext);
+
+  useEffect (() => {
+    const body = document.querySelector('body');
+    if (toggle) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  }, [toggle]);
+
   return (
-    <div className={`${ toggle ? 'overflow-hidden' : ''}`}>
+    <div>
       <Navbar />
-      {
-        toggle && <MobileSideBar />
-      }
+      { toggle && <MobileSideBar /> }
+      <HeroSection />
     </div>
   );
 }

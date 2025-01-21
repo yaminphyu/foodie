@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        dancing: ["Dancing Script", "cursive"],
+      },
       screens: {
         sm: "640px",
         md: "768px",
