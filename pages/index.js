@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs";
 import HeroSection from "@/components/HeroSection";
 import MobileSideBar from "@/components/MobileSideBar";
 import Navbar from "@/components/Navbar";
@@ -20,7 +21,10 @@ export default function Home() {
     <div>
       <Navbar />
       { toggle && <MobileSideBar /> }
-      <HeroSection />
+      <div className="flex flex-col justify-center items-center w-full h-full">
+        <HeroSection />
+        <AboutUs />
+      </div>
     </div>
   );
 }
