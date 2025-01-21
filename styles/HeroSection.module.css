@@ -7,7 +7,7 @@
 }
 
 .text-container {
-    @apply w-[90vw] md:w-2/5 h-full flex flex-col justify-start md:justify-center items-start gap-3;
+    @apply w-[80vw] md:w-2/5 h-full flex flex-col justify-start md:justify-center items-start gap-3;
 }
 
 .title {
@@ -23,5 +23,5 @@
 }
 
 .image-container {
-    @apply w-[90vw] md:w-2/5 h-full flex justify-center items-center;
+    @apply w-[80vw] md:w-2/5 h-full flex justify-center items-center;
 }
