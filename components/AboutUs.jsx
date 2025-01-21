@@ -55,7 +55,7 @@ export default function AboutUs() {
                 width={550}
                 height={300}
                 alt='signature'
-                objectFit='cover'
+                className='object-cover'
               />
             </div>
           </div>
