@@ -1,5 +1,5 @@
 .container {
-    @apply mt-16 md:mt-20 xl:mt-24 flex justify-center items-center w-full h-[85vh] md:h-[60vh] lg:h-[73vh] py-4 md:py-0 px-5 md:px-10 xl:px-5 box-border bg-gray-100;
+    @apply mt-16 md:mt-20 xl:mt-24 flex justify-center items-center w-full h-[93vh] md:h-[60vh] lg:h-[73vh] py-4 md:py-0 px-5 md:px-10 xl:px-5 box-border bg-gray-100;
 }
 
 .wrapper {
