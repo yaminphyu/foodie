@@ -1,9 +1,9 @@
 .container {
-    @apply absolute mt-16 md:mt-20 xl:mt-24 flex justify-center items-center w-full h-full md:h-[60vh] lg:h-[70vh] px-5 md:px-10 xl:px-5 box-border bg-gray-100;
+    @apply absolute mt-16 md:mt-20 xl:mt-24 flex justify-center items-center w-full h-full md:h-[60vh] lg:h-[73vh] px-5 md:px-10 xl:px-5 box-border bg-gray-100;
 }
 
 .wrapper {
-    @apply w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[75vw] 5xl:w-[65vw] h-full flex flex-col-reverse md:flex-row justify-between items-center;
+    @apply w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[75vw] 5xl:w-[70vw] h-full flex flex-col-reverse md:flex-row justify-between items-center;
 }
 
 .text-container {
@@ -23,5 +23,11 @@
 }
 
 .image-container {
-    @apply w-[80vw] md:w-2/5 h-full flex justify-center items-center;
+    @apply w-[80vw] md:w-2/5 h-full flex justify-center items-center py-5 md:py-0 box-border;
+}
+
+@media screen and (min-width: 768px) and (max-width: 912px) {
+    .container {
+        @apply h-[45vh];
+    }
 }
