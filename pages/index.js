@@ -5,6 +5,7 @@ import MobileSideBar from "@/components/MobileSideBar";
 import Navbar from "@/components/Navbar";
 import { MobileToggleContext } from "@/context/MobileToggleContext";
 import Footer from "@/components/Footer";
+import ScrollUpArrow from "@/components/ScrollUpArrow";
 
 export default function Home() {
   const { toggle } = useContext(MobileToggleContext);
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutUs />
         <Footer />
       </div>
+      <ScrollUpArrow />
     </div>
   );
 }
