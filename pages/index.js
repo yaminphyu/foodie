@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { MobileToggleContext } from "@/context/MobileToggleContext";
 import Footer from "@/components/Footer";
 import ScrollUpArrow from "@/components/ScrollUpArrow";
+import WhyChooseMe from "@/components/WhyChooseMe";
 
 export default function Home() {
   const { toggle, setToggle } = useContext(MobileToggleContext);
@@ -63,6 +64,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <HeroSection />
         <AboutUs />
+        <WhyChooseMe />
         <Footer />
       </div>
       <ScrollUpArrow />
