@@ -1,29 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import { menu } from "@/config";
 import styles from '@/styles/Navbar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { MobileToggleContext } from '@/context/MobileToggleContext';
 
-export default function Navbar() {
+export default function Navbar({ toggle, handleToggle }) {
     const website_name = process.env.NEXT_PUBLIC_WEBSITE_NAME;
     const router = useRouter();
-    const { toggle, setToggle } = useContext(MobileToggleContext);
-
-    const handleToggle = () => {
-        // Save the current scroll position
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-        // Apply a class to disable body scroll
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${scrollPosition}px`;
-        document.body.style.width = '100%';
-        document.body.style.overflow = 'hidden';
-
-        // Dispatch the action to open the sidebar
-        setToggle(!toggle);
-    };
 
     return (
         <nav className={styles.container}>

@@ -30,9 +30,19 @@ export default {
           '0%, 100%': { transform: 'translateY(-3%)', animationTimingFunction: 'ease-in-out' },
           '50%': { transform: 'translateY(3%)', animationTimingFunction: 'ease-in-out' },
         },
+        easeIn: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        easeOut: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
       },
       animation: {
         bounce: 'bounce 5s infinite',
+        easeIn: 'easeIn 0.7s ease-in',
+        easeOut: 'easeOut 0.7s ease-out',
       },
     },
   },
