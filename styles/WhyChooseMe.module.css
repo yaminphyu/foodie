@@ -1,0 +1,57 @@
+.container {
+    @apply flex justify-center items-center w-full h-full px-5 md:px-10 xl:px-5 md:py-16 lg:py-10 box-border bg-gray-100;
+}
+
+.wrapper {
+    @apply grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-10 w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[75vw] 5xl:w-[70vw] px-6 py-12 lg:p-0;
+}
+
+.item-container {
+    @apply flex flex-col justify-between items-center w-full h-full xl:h-[45vh] px-5 md:px-20 py-7 lg:py-16 box-border;
+}
+
+.first-item {
+    @apply bg-yellow-500 gap-4 md:gap-10;
+}
+
+.other-items {
+    @apply bg-white gap-6 md:gap-10;
+}
+
+.title {
+    @apply text-2xl md:text-4xl font-semibold text-white text-center;
+}
+
+.description {
+    @apply text-white font-medium text-center;
+}
+
+.learn-more {
+    @apply w-36 md:w-40 h-10 md:h-12 bg-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 text-white text-sm md:text-base font-medium rounded-full px-4 py-1 lg:py-2 tracking-widest mt-4 box-border;
+}
+
+.arrow-icon {
+    @apply ml-2 text-lg;
+}
+
+.other-icons-container {
+    @apply flex justify-center items-center w-[4.5rem] h-[4.5rem] bg-yellow-100 rounded-full;
+}
+
+.other-icons {
+    @apply text-3xl text-yellow-500;
+}
+
+.other-titles {
+    @apply text-lg font-semibold text-center;
+}
+
+.other-descriptions {
+    @apply text-center text-sm md:text-base;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1300px) {
+    .item-container {
+        @apply xl:h-[55vh];
+    }
+}
