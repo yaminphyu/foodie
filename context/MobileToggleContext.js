@@ -6,7 +6,7 @@ const MobileToggleContext = createContext({
 });
 
 const MobileToggleProvider = ({ children }) => {
-    const [toggle, setToggle] = useState(null);
+    const [toggle, setToggle] = useState(false);
 
     return (
         <MobileToggleContext.Provider value={{ toggle, setToggle }}>

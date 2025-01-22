@@ -1,31 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from '@/styles/Navbar.module.css';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { MobileToggleContext } from '@/context/MobileToggleContext';
 import { menu } from '@/config';
 
-export default function MobileSideBar() {
-    const { toggle, setToggle } = useContext(MobileToggleContext);
-
-    const handleToggle = () => {
-        const scrollPosition = parseInt(document.body.style.top, 10) * -1;
-
-        // Restore body scroll
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        document.body.style.overflow = '';
-
-        // Scroll back to the original position
-        window.scrollTo(0, scrollPosition);
-
-        // Dispatch the action to open the sidebar
-        setToggle(!toggle);
-    };
-
+export default function MobileSideBar({ isAnimating, handleToggle }) {
     return (
-        <div className={styles['mobile-sidebar-container']}>
+        <div className={`
+            ${isAnimating ? 'animate-easeIn' : 'animate-easeOut'}
+            ${styles['mobile-sidebar-container']}
+        `}>
             <div className={styles['close-btn']}>
                 <div
                     className={styles['mobile-toggle-action']}
