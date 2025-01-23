@@ -1,0 +1,71 @@
+.container {
+    @apply flex justify-center items-center w-full h-full px-5 md:px-10 xl:px-5 md:py-16 lg:py-28 box-border bg-white;
+}
+
+.main-part {
+    @apply w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw];
+}
+
+.wrapper {
+    @apply flex flex-col justify-center items-center h-full gap-7 md:gap-10 px-2 md:px-6 py-12 lg:p-0;
+}
+
+.sub-menu {
+    @apply uppercase text-sm text-center mt-3;
+}
+
+.title {
+    @apply text-3xl font-dancing uppercase text-center;
+}
+
+.tab-container {
+    @apply w-full flex flex-col justify-center items-center max-w-md mx-auto;
+}
+
+.tabs {
+    @apply flex space-x-8;
+}
+
+.tab-item {
+    @apply relative py-2 text-sm font-medium;
+}
+
+.active {
+    @apply text-yellow-500 border-b-2 border-yellow-500;
+}
+
+.inactive {
+    @apply text-gray-500 hover:text-gray-800 border-b-2 border-yellow-100;
+}
+
+.menu-container {
+    @apply mt-4 text-gray-700 grid grid-cols-1 gap-4 justify-center items-center;
+}
+
+.menu-wrapper {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 my-5 mx-auto w-full;
+}
+
+.menu {
+    @apply flex flex-col justify-center items-center gap-4;
+}
+
+.menu-image {
+    @apply w-full h-80 object-contain rounded-lg;
+}
+
+.description {
+    @apply flex flex-col justify-center items-center gap-4;
+}
+
+.description h1 {
+    @apply text-xl font-semibold;
+}
+
+.description p:first-child {
+    @apply text-gray-500;
+}
+
+.description p:last-child {
+    @apply text-yellow-500;
+}
