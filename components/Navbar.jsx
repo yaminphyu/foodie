@@ -4,6 +4,8 @@ import { menu } from "@/config";
 import styles from '@/styles/Navbar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
+import { handleSmoothScroll } from '@/common';
 
 export default function Navbar({ toggle, handleToggle }) {
     const website_name = process.env.NEXT_PUBLIC_WEBSITE_NAME;
@@ -24,13 +26,17 @@ export default function Navbar({ toggle, handleToggle }) {
                                 className={styles.item}
                                 key={item.id}
                             >
-                                <a
-                                    href={item.url}
+                                <Link
+                                    href={`#${item.url}`}
+                                    scroll={false}
+                                    onClick={(e) => handleSmoothScroll(e, item.url)}
                                     className={`
                                         ${ styles['item-text'] }
                                         ${ router.pathname == item.url ? styles.active : styles.hover }
                                     `}
-                                >{item.title}</a>
+                                >
+                                    {item.title}
+                                </Link>
                             </li>
                         ))
                         }

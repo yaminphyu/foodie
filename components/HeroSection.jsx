@@ -4,7 +4,10 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className={styles.container}>
+    <section
+      className={styles.container}
+      id='hero'
+    >
       <div className={styles.wrapper}>
         <div className={styles['text-container']}>
           <h1 className={styles.title}>Enjoy Your Healthy Delicious Food</h1>
@@ -22,6 +25,6 @@ export default function HeroSection() {
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
