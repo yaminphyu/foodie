@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         dancing: ["Dancing Script", "cursive"],
       },
+      backgroundImage: {
+        "counter-bg": "url('/images/stats-bg.jpg')",
+      },
       screens: {
         sm: "640px",
         md: "768px",

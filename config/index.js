@@ -39,4 +39,11 @@ export const menu = [
         title: "Contact",
         url: "contact",
     },
-]
+];
+
+export const targets = {
+    clients: 232,
+    projects: 521,
+    hours: 1453,
+    workers: 32
+};
