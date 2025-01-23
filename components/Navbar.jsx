@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { menu } from "@/config";
 import styles from '@/styles/Navbar.module.css';
@@ -10,6 +10,20 @@ import { handleSmoothScroll } from '@/common';
 export default function Navbar({ toggle, handleToggle }) {
     const website_name = process.env.NEXT_PUBLIC_WEBSITE_NAME;
     const router = useRouter();
+    const [activePage, setActivePage] = useState('hero');
+
+    useEffect(() => {
+        const getArray = router.asPath.split('#');
+        setActivePage(getArray[1]);
+    }, [router.asPath]);
+
+    const handleActivePage = (url) => {
+        if (activePage === url) {
+            return;
+        }
+
+        setActivePage(url);
+    }
 
     return (
         <nav className={styles.container}>
@@ -27,12 +41,15 @@ export default function Navbar({ toggle, handleToggle }) {
                                 key={item.id}
                             >
                                 <Link
-                                    href={`#${item.url}`}
+                                    href={`#${item?.url}`}
                                     scroll={false}
-                                    onClick={(e) => handleSmoothScroll(e, item.url)}
+                                    onClick={(e) => {
+                                        handleSmoothScroll(e, item.url);
+                                        handleActivePage(item.url);
+                                    }}
                                     className={`
                                         ${ styles['item-text'] }
-                                        ${ router.pathname == item.url ? styles.active : styles.hover }
+                                        ${ activePage == item.url ? styles.active : styles.hover }
                                     `}
                                 >
                                     {item.title}
