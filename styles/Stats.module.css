@@ -1,0 +1,19 @@
+.container {
+    @apply flex flex-col justify-center items-center bg-gray-700 bg-opacity-70 bg-blend-overlay bg-counter-bg bg-no-repeat bg-cover w-full h-screen md:h-[40vh];
+}
+
+.wrapper {
+    @apply grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] h-full gap-10 md:gap-10 px-2 md:px-6 py-12 lg:p-0;
+}
+
+.item {
+    @apply flex flex-col justify-center items-center w-full h-full gap-2;
+}
+
+.count {
+    @apply text-4xl 4xl:text-5xl text-white font-bold;
+}
+
+.title {
+    @apply text-xl text-gray-300 font-semibold;
+}
