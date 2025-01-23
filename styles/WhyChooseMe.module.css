@@ -3,43 +3,39 @@
 }
 
 .wrapper {
-    @apply grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-10 w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[75vw] 5xl:w-[70vw] px-6 py-12 lg:p-0;
+    @apply flex flex-col lg:flex-row justify-between items-center gap-5 md:gap-10 w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] px-2 md:px-6 py-12 lg:p-0 mx-auto box-border;
 }
 
-.item-container {
-    @apply flex flex-col justify-between items-center w-full h-full xl:h-[45vh] px-5 md:px-20 py-7 lg:py-16 box-border;
+.main-container {
+    @apply h-full lg:h-[50vh] xl:h-[42vh];
 }
 
-.first-item {
-    @apply bg-yellow-500 gap-4 md:gap-10;
-}
-
-.other-items {
-    @apply bg-white gap-6 md:gap-10;
+.first-container {
+    @apply bg-yellow-500 w-full lg:w-[30vw] p-7 box-border flex flex-col justify-between gap-5;
 }
 
 .title {
-    @apply text-2xl md:text-4xl font-semibold text-white text-center;
+    @apply text-2xl lg:text-3xl font-semibold text-white;
 }
 
 .description {
-    @apply text-white font-medium text-center;
+    @apply text-white font-medium;
 }
 
 .learn-more {
-    @apply w-36 md:w-40 h-10 md:h-12 bg-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 text-white text-sm md:text-base font-medium rounded-full px-4 py-1 lg:py-2 tracking-widest mt-4 box-border;
+    @apply bg-yellow-400 hover:bg-white text-white hover:text-yellow-400 w-36 py-2 rounded-full flex flex-row items-center gap-2 justify-center;
 }
 
-.arrow-icon {
-    @apply ml-2 text-lg;
+.second-container {
+    @apply w-full lg:w-[70vw] grid grid-flow-row lg:grid-cols-3 gap-5 md:gap-10;
+}
+
+.item-containers {
+    @apply bg-white flex flex-col items-center justify-center gap-5 p-7 box-border w-full;
 }
 
 .other-icons-container {
-    @apply flex justify-center items-center w-[4.5rem] h-[4.5rem] bg-yellow-100 rounded-full;
-}
-
-.other-icons {
-    @apply text-3xl text-yellow-500;
+    @apply flex justify-center items-center text-2xl rounded-full bg-yellow-50 group-hover:bg-yellow-500 hover:bg-yellow-500 text-yellow-500 group-hover:text-white hover:text-white w-[4.5rem] h-[4.5rem] p-3 box-border;
 }
 
 .other-titles {
@@ -48,10 +44,4 @@
 
 .other-descriptions {
     @apply text-center text-sm md:text-base;
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1300px) {
-    .item-container {
-        @apply xl:h-[55vh];
-    }
 }

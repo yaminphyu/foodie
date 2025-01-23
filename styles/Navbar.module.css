@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    @apply w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[75vw] 5xl:w-[70vw] h-full flex justify-between items-center;
+    @apply w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] h-full flex justify-between items-center;
 }
 
 .header {
