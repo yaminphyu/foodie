@@ -3,8 +3,10 @@ import styles from '@/styles/Navbar.module.css';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { menu } from '@/config';
+import Link from 'next/link';
+import { handleSmoothScroll } from '@/common';
 
-export default function MobileSideBar({ isAnimating, handleToggle }) {
+export default function MobileSideBar({ handleToggle, isAnimating, closeSidebar }) {
     return (
         <div className={`
             ${isAnimating ? 'animate-easeIn' : 'animate-easeOut'}
@@ -25,12 +27,14 @@ export default function MobileSideBar({ isAnimating, handleToggle }) {
                             <li
                                 key={item.id}
                             >
-                                <a
-                                    href={item.url}
+                                <Link
+                                    href={`#${item.url}`}
+                                    scroll={false}
+                                    onClick={(e) => handleSmoothScroll(e, item.url, closeSidebar)}
                                     className={styles['mobile-item']}
                                 >
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         ))
                     }

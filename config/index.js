@@ -2,41 +2,41 @@ export const menu = [
     {
         id: 1,
         title: "Home",
-        url: "/",
+        url: "hero",
     },
     {
         id: 2,
         title: "About",
-        url: "/about",
+        url: "about",
     },
     {
         id: 3,
         title: "Menu",
-        url: "/menu",
+        url: "menu",
     },
     {
         id: 4,
         title: "Events",
-        url: "/events",
+        url: "events",
     },
     {
         id: 5,
         title: "Chefs",
-        url: "/chefs",
+        url: "chefs",
     },
     {
         id: 6,
         title: "Gallery",
-        url: "/gallery",
+        url: "gallery",
     },
     {
         id: 7,
         title: "Dropdown",
-        url: "/dropdown",
+        url: "dropdown",
     },
     {
         id: 8,
         title: "Contact",
-        url: "/contact",
+        url: "contact",
     },
 ]

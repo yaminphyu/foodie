@@ -6,7 +6,10 @@ import styles from '@/styles/AboutUs.module.css';
 
 export default function AboutUs() {
   return (
-    <div className={styles.container}>
+    <section
+      className={styles.container}
+      id="about"
+    >
       <div className={styles.wrapper}>
         <p className={styles.title}>About Us</p>
         <h1 className={styles['main-title']}>Learn More <span className='text-yellow-500'>About Us</span></h1>
@@ -61,6 +64,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
