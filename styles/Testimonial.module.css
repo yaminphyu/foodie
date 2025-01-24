@@ -19,7 +19,7 @@
 }
 
 .line {
-    @apply w-4 h-full md:h-52 bg-yellow-500;
+    @apply w-4 h-full md:h-60 bg-yellow-500;
 }
 
 .information {
