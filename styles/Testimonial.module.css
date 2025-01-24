@@ -1,0 +1,10 @@
+.line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    height: 100%;
+    width: 3px;
+    background-color: #d40000; /* Red line */
+    border-radius: 3px;
+}

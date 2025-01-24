@@ -15,7 +15,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "15.1.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-elastic-carousel": "^0.11.5",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
