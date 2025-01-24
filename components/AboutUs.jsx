@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '@/styles/AboutUs.module.css';
-import TitleSection from './TitleSection';
 
 export default function AboutUs() {
   return (
@@ -12,11 +11,8 @@ export default function AboutUs() {
       id="about"
     >
       <div className={styles.wrapper}>
-        <TitleSection
-            subTitle='About Us'
-            firstTitle='Learn More'
-            secondTitle='About Us'
-        />
+        <p className={styles.title}>About Us</p>
+        <h1 className={styles['main-title']}>Learn More <span className='text-yellow-500'>About Us</span></h1>
         <div className={styles['booking-container']}>
           <div className={styles['booking-img-container']}>
             <Image

@@ -10,6 +10,14 @@
     @apply flex flex-col justify-center items-center h-full gap-7 md:gap-10 px-2 md:px-6 py-12 lg:p-0;
 }
 
+.sub-menu {
+    @apply uppercase text-sm text-center mt-3;
+}
+
+.title {
+    @apply text-3xl font-dancing uppercase text-center;
+}
+
 .tab-container {
     @apply w-full flex flex-col justify-center items-center max-w-md mx-auto;
 }

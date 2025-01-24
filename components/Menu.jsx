@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { foodMenu } from '@/config';
 import Image from 'next/image';
 import styles from '@/styles/Menu.module.css';
-import TitleSection from './TitleSection';
 
 export default function Menu() {
     const [activeTab, setActiveTab] = useState({
@@ -28,11 +27,8 @@ export default function Menu() {
             className={styles.container}
         >
             <div className={`${styles.wrapper} ${styles['main-part']}`}>
-                <TitleSection
-                    subTitle='Our Menu'
-                    firstTitle='Check our'
-                    secondTitle='Yummy Menu'
-                />
+                <p className={styles['sub-menu']}>Our Menu</p>
+                <h1 className={styles.title}>Check our <span className='text-yellow-500'>Yummy Menu</span></h1>
                 <div className={styles['tab-container']}>
                     <div className={styles['tabs']}>
                         {tabs.map((tab) => (
@@ -52,10 +48,8 @@ export default function Menu() {
                         ))}
                     </div>
                     <div className={`${styles['menu-container']} ${styles['main-part']}`}>
-                        <TitleSection
-                            subTitle='Menu'
-                            secondTitle={activeTab.name}
-                        />
+                        <p className={styles['sub-menu']}>Menu</p>
+                        <h1 className={`text-yellow-500 ${styles.title}`}>{activeTab.name}</h1>
                         <div className={styles['menu-wrapper']}>
                             {mainMenu?.map((item) => (
                                 <div
