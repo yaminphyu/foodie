@@ -9,6 +9,7 @@ import ScrollUpArrow from "@/components/ScrollUpArrow";
 import WhyChooseMe from "@/components/WhyChooseMe";
 import Stats from "@/components/Stats";
 import Menu from "@/components/Menu";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   const { toggle, setToggle } = useContext(MobileToggleContext);
@@ -79,6 +80,7 @@ export default function Home() {
         <WhyChooseMe />
         <Stats />
         <Menu />
+        <Testimonial />
         <Footer />
       </div>
       <ScrollUpArrow />
