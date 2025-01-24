@@ -225,35 +225,4 @@ export const foodMenu = {
             image: "/images/menu/menu-item-6.png",
         },
     ],
-};
-
-export const testimonials = [
-    {
-        id: 1,
-        name: "Saul Goodman",
-        title: "Ceo & Founder",
-        image: "/images/testimonials/testimonials-1.jpg",
-        description: "Proin iaculis purus consequat sem cure digni ssim tamen malis malis eram donec porttitora entum velit sunt aliqua noster fugiat.",
-    },
-    {
-        id: 2,
-        name: "Sara Wilsson",
-        title: "Designer",
-        image: "/images/testimonials/testimonials-2.jpg",
-        description: "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.",
-    },
-    {
-        id: 3,
-        name: "Jena Karlis",
-        title: "Store Owner",
-        image: "/images/testimonials/testimonials-3.jpg",
-        description: "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.",
-    },
-    {
-        id: 4,
-        name: "Matt Brandon",
-        title: "Freelancer",
-        image: "/images/testimonials/testimonials-4.jpg",
-        description: "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.",
-    },
-]
+}
