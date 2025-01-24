@@ -296,3 +296,27 @@ export const events = [
         image: "/images/events/events-2.jpg",
     },
 ];
+
+export const chefs = [
+    {
+        id: 1,
+        name: "Walter White",
+        speciality: "Master Chef",
+        image: "/images/chefs/chefs-1.jpg",
+        description: "Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate."
+    },
+    {
+        id: 2,
+        name: "Sarah Jhonson",
+        speciality: "Patissier",
+        image: "/images/chefs/chefs-2.jpg",
+        description: "Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate."
+    },
+    {
+        id: 3,
+        name: "William Anderson",
+        speciality: "Cook",
+        image: "/images/chefs/chefs-3.jpg",
+        description: "Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate."
+    }
+];
