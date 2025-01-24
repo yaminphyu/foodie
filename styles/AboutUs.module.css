@@ -6,14 +6,6 @@
     @apply flex flex-col justify-center items-center w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] h-full gap-7 md:gap-10 px-2 md:px-6 py-12 lg:p-0;
 }
 
-.title {
-    @apply uppercase text-sm;
-}
-
-.main-title {
-    @apply text-3xl font-dancing uppercase;
-}
-
 .booking-container {
     @apply flex flex-col lg:flex-row justify-between items-start w-full lg:h-[75vh] gap-12 md:gap-20;
 }
