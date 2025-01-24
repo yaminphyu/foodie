@@ -256,4 +256,43 @@ export const testimonials = [
         image: "/images/testimonials/testimonials-4.jpg",
         description: "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.",
     },
-]
+];
+
+export const events = [
+    {
+        id: 1,
+        title: "Corporate Parties",
+        price: 655,
+        image: "/images/events/events-1.jpg",
+    },
+    {
+        id: 2,
+        title: "Birthday Parties",
+        price: 135,
+        image: "/images/events/events-2.jpg",
+    },
+    {
+        id: 3,
+        title: "Private Parties",
+        price: 89,
+        image: "/images/events/events-2.jpg",
+    },
+    {
+        id: 4,
+        title: "Wedding Parties",
+        price: 19,
+        image: "/images/events/events-4.jpg",
+    },
+    {
+        id: 5,
+        title: "Restaurants",
+        price: 899,
+        image: "/images/events/events-1.jpg",
+    },
+    {
+        id: 6,
+        title: "Others",
+        price: 899,
+        image: "/images/events/events-2.jpg",
+    },
+];
