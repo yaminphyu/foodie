@@ -11,6 +11,7 @@ import Stats from "@/components/Stats";
 import Menu from "@/components/Menu";
 import Testimonial from "@/components/Testimonial";
 import Chef from "@/components/Chef";
+import BookMe from "@/components/BookMe";
 // import Events from "@/components/Events";
 
 export default function Home() {
@@ -85,6 +86,7 @@ export default function Home() {
         <Testimonial />
         {/* <Events /> */}
         <Chef />
+        <BookMe />
         <Footer />
       </div>
       <ScrollUpArrow />
