@@ -16,5 +16,5 @@ export const handleSmoothScroll = (e, id, closeSidebar) => {
                 window.history.pushState(null, '', `#${id}`);
             }
         }
-    }, 300); // Adjust the delay to match the sidebar closing animation time
+    }, 550); // Adjust the delay to match the sidebar closing animation time
 };

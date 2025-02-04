@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    @apply w-full lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] h-full flex justify-between items-center;
+    @apply w-full md:w-[80vw] lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] h-full flex justify-between items-center;
 }
 
 .header {
@@ -47,7 +47,7 @@
 }
 
 .mobile-sidebar-container {
-    @apply z-20 w-[65vw] md:w-[40vw] h-screen fixed lg:absolute top-0 right-0 overflow-y-auto flex flex-col bg-yellow-400;
+    @apply z-20 w-[65vw] md:w-[40vw] h-screen fixed xl:absolute top-0 right-0 overflow-y-auto flex flex-col bg-yellow-400;
 }
 
 .close-btn {

@@ -31,3 +31,15 @@ body {
 
   box-shadow: 0 0 1px 3px rgb(211 197 64) !important;
 }
+
+.react-datepicker-wrapper {
+  @apply w-full;
+}
+
+.react-datepicker__close-icon {
+  @apply !-top-[10px];
+}
+
+.react-datepicker-wrapper {
+  @apply w-full xl:w-1/2;
+}
