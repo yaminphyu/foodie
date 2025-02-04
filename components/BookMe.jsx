@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TitleSection from './TitleSection';
-import Image from 'next/image';
 import DatePicker from "react-datepicker";
+import styles from '@/styles/BookMe.module.css';
 
 export default function BookMe() {
     const [startDate, setStartDate] = useState(new Date());
@@ -9,41 +9,41 @@ export default function BookMe() {
     return (
         <section
             id='bookme'
-            className='flex justify-center items-center w-full h-full px-5 md:px-10 xl:px-5 md:py-16 lg:py-28 box-border bg-white'
+            className={styles.container}
         >
-            <div className='flex flex-col justify-center items-center w-full md:w-[80vw] lg:w-[85vw] xl:w-[90vw] 3xl:w-[85vw] 4xl:w-[85vw] 5xl:w-[76vw] h-full gap-7 md:gap-10 px-2 md:px-6 py-12 lg:p-0 lg:h-[73vh]'>
+            <div className={styles.wrapper}>
                 <TitleSection
                     subTitle='Book a Table'
                     firstTitle={'Book your'}
                     secondTitle={'Stay with us'}
                 />
-                <div className='flex flex-col lg:flex-row justify-start items-start w-full h-full'>
-                    <div className='w-full lg:w-[40vw] xl:w-[30vw]'>
+                <div className={styles['body-container']}>
+                    <div className={styles['image-container']}>
                         <img
                             src='/images/reservation.jpg'
                             alt='booking'
-                            className='w-full h-full lg:h-[55vh]'
+                            className={styles.image}
                         />
                     </div>
-                    <div className='flex flex-col items-start p-5 w-full lg:w-[50vw] xl:w-[60vw]'>
-                        <form className='flex flex-col items-start w-full'>
-                            <div className='flex flex-col xl:flex-row xl:gap-14 w-full'>
+                    <div className={styles['left-container']}>
+                        <form className={styles.form}>
+                            <div className={styles.box}>
                                 <input
                                     type="text"
                                     placeholder='Your Name'
-                                    className='mb-5 border-[1px] border-gray-400 px-4 py-2 md:py-3 w-full xl:w-1/2'
+                                    className={`${styles['simple-input']} ${styles['input-box']}`}
                                 />
                                 <input
                                     type="email"
                                     placeholder='Your Email'
-                                    className='mb-5 border-[1px] border-gray-400 px-4 py-2 md:py-3 w-full xl:w-1/2'
+                                    className={`${styles['simple-input']} ${styles['input-box']}`}
                                 />
                             </div>
-                            <div className='flex flex-col xl:flex-row xl:gap-14 w-full'>
+                            <div className={styles.box}>
                                 <input
                                     type="text"
                                     placeholder='# of Guests'
-                                    className='mb-5 border-[1px] border-gray-400 px-4 py-2 md:py-3 w-full xl:w-1/2'
+                                    className={`${styles['simple-input']} ${styles['input-box']}`}
                                     onKeyPress={(e) => {
                                         if (!/[0-9]/.test(e.key)) {
                                             e.preventDefault();
@@ -56,7 +56,7 @@ export default function BookMe() {
                                     onChange={(date) => setStartDate(date)}
                                     dateFormat="MMMM d, yyyy h:mm aa"
                                     showTimeSelect
-                                    className='mb-5 border-[1px] border-gray-400 px-4 py-2 md:py-3 w-full focus:outline-none'
+                                    className={`${styles['input-box']} focus:outline-none`}
                                 />
                             </div>
                             <textarea
@@ -65,11 +65,11 @@ export default function BookMe() {
                                 id=""
                                 cols="30"
                                 rows="5"
-                                className='mb-5 border-[1px] border-gray-400 px-4 py-2 md:py-3 w-full'
+                                className={styles['input-box']}
                             />
                             <button
                                 type="submit"
-                                className='bg-yellow-500 text-white px-4 py-2 md:py-3 w-full'
+                                className={styles['book-me']}
                             >Book a Table</button>
                         </form>
                     </div>
