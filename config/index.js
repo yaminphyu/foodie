@@ -320,3 +320,46 @@ export const chefs = [
         description: "Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate."
     }
 ];
+
+export const galleries = [
+    {
+        id: 1,
+        name: "Gallery 1",
+        image: "/images/gallery/gallery-1.jpg",
+    },
+    {
+        id: 2,
+        name: "Gallery 2",
+        image: "/images/gallery/gallery-2.jpg",
+    },
+    {
+        id: 3,
+        name: "Gallery 3",
+        image: "/images/gallery/gallery-3.jpg",
+    },
+    {
+        id: 4,
+        name: "Gallery 4",
+        image: "/images/gallery/gallery-4.jpg",
+    },
+    {
+        id: 5,
+        name: "Gallery 5",
+        image: "/images/gallery/gallery-5.jpg",
+    },
+    {
+        id: 6,
+        name: "Gallery 6",
+        image: "/images/gallery/gallery-6.jpg",
+    },
+    {
+        id: 7,
+        name: "Gallery 7",
+        image: "/images/gallery/gallery-7.jpg",
+    },
+    {
+        id: 8,
+        name: "Gallery 8",
+        image: "/images/gallery/gallery-8.jpg",
+    }
+];
