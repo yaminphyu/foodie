@@ -12,6 +12,7 @@ import Menu from "@/components/Menu";
 import Testimonial from "@/components/Testimonial";
 import Chef from "@/components/Chef";
 import BookMe from "@/components/BookMe";
+import Gallery from "@/components/Gallery";
 // import Events from "@/components/Events";
 
 export default function Home() {
@@ -86,6 +87,7 @@ export default function Home() {
         <Testimonial />
         {/* <Events /> */}
         <Chef />
+        <Gallery />
         <BookMe />
         <Footer />
       </div>
